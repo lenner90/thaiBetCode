@@ -1,0 +1,8 @@
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\obj\Debug\netstandard2.0\thaibet.csproj.CoreCompileInputs.cache
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\obj\Debug\netstandard2.0\thaibet.AssemblyInfoInputs.cache
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\obj\Debug\netstandard2.0\thaibet.AssemblyInfo.cs
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\bin\Debug\netstandard2.0\thaibet.deps.json
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\bin\Debug\netstandard2.0\thaibet.dll
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\bin\Debug\netstandard2.0\thaibet.pdb
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\obj\Debug\netstandard2.0\thaibet.dll
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\obj\Debug\netstandard2.0\thaibet.pdb
