@@ -98,6 +98,7 @@ D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.Android\obj\Debug\andr
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.Android\bin\Debug\thaibet.Android.dll
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.Android\obj\Debug\linksrc\thaibet.pdb
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.Android\obj\Debug\linksrc\thaibet.Android.dll.mdb
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

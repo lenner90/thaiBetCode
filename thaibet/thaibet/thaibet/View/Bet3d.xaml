@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thaibet.View.Bet3d">
+
+    <ContentPage.Content>
+        <Grid Margin="16">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" Orientation="Horizontal" Spacing="70">
+                <Label Text="No" />
+                <Label Text="Up" />
+                <Label Text="Down" />
+
+            </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="40">
+                <Entry x:Name="txtNo1"
+                        WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding No1}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtUp1"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Up1}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtDown1"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Down1}"
+                       Placeholder=""
+                        />
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Horizontal" Spacing="40">
+                <Entry x:Name="txtNo2"
+                        WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding No2}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtUp2"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Up2}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtDown2"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Down2}"
+                       Placeholder=""
+                        />
+            </StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="40">
+                <Entry x:Name="txtNo3"
+                        WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding No3}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtUp3"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Up3}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtDown3"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Down3}"
+                       Placeholder=""
+                        />
+            </StackLayout>
+            <StackLayout Grid.Row="4" Orientation="Horizontal" Spacing="40">
+                <Entry x:Name="txtNo4"
+                        WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding No4}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtUp4"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Up4}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtDown4"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Down4}"
+                       Placeholder=""
+                        />
+            </StackLayout>
+            <StackLayout Grid.Row="5" Orientation="Horizontal" Spacing="40">
+                <Entry x:Name="txtNo5"
+                        WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding No5}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtUp5"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Up5}"
+                       Placeholder=""
+                        />
+                <Entry x:Name="txtDown5"
+                       WidthRequest="50"
+                       MaxLength="4"
+                       Text="{Binding Down5}"
+                       Placeholder=""
+                        />
+            </StackLayout>
+            <Button Grid.Row="6" Text="Submit" Clicked="OnClicked" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

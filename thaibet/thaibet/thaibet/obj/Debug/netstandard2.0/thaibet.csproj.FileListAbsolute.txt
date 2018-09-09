@@ -6,3 +6,4 @@ D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\bin\Debug\netstandard2
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\bin\Debug\netstandard2.0\thaibet.pdb
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\obj\Debug\netstandard2.0\thaibet.dll
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\obj\Debug\netstandard2.0\thaibet.pdb
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet\obj\Debug\netstandard2.0\thaibet.csprojAssemblyReference.cache

@@ -13,5 +13,10 @@ namespace thaibet
 		{
 			InitializeComponent();
 		}
-	}
+
+        public void OnClickOrder(object o, EventArgs e)
+        {
+
+        }
+    }
 }

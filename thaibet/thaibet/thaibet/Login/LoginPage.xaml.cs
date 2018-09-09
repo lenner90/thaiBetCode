@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-
+using thaibet.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -33,7 +33,7 @@ namespace thaibet.Login
             //string id = Application.Current.Properties["id"].ToString();
 
             string data = "userName=" + userNm.Text + "&pass=" + txtPass.Text;
-            string urlPath = "http://192.168.0.173/RESTAPI/API/Home?";
+            string urlPath = "http://192.168.0.173/BETAPI/API/Values?";
             var request = HttpWebRequest.Create(urlPath + data);
             request.ContentType = "application/json";
             //request.Method = "GET";
@@ -65,7 +65,7 @@ namespace thaibet.Login
                         {
                             Application.Current.Properties["userId"] = content.ToString();
                             Application.Current.Properties["userName"] = userNm.Text.Trim();
-                            Navigation.PushAsync(new MainPage());
+                            Navigation.PushAsync(new BetType());
                         }
                     }
 
