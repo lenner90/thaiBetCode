@@ -54,3 +54,10 @@ D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\bin\iPhoneSimulato
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\obj\iPhoneSimulator\Debug\thaibet.iOS.csproj.CopyComplete
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\obj\iPhoneSimulator\Debug\thaibet.iOS.exe
 D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\obj\iPhoneSimulator\Debug\thaibet.iOS.pdb
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Licensing.dll
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Core.XForms.dll
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\bin\iPhoneSimulator\Debug\Syncfusion.DataSource.Portable.dll
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\bin\iPhoneSimulator\Debug\Syncfusion.GridCommon.Portable.dll
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfListView.XForms.dll
+D:\Project\xamarin sample\thaibet\thaibet\thaibet\thaibet.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfListView.XForms.iOS.dll

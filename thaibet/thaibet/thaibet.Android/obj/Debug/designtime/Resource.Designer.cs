@@ -26,6 +26,9 @@ namespace thaibet.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Syncfusion.ListView.XForms.Android.Resource.String.ApplicationName = global::thaibet.Droid.Resource.String.ApplicationName;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Hello = global::thaibet.Droid.Resource.String.Hello;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Load_More = global::thaibet.Droid.Resource.String.Load_More;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::thaibet.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -3941,11 +3944,20 @@ namespace thaibet.Droid
 			// aapt resource value: 2132082718
 			public static int appbar_scrolling_view_behavior = 2132082718;
 			
+			// aapt resource value: 0
+			public static int ApplicationName = 0;
+			
 			// aapt resource value: 2132082719
 			public static int bottom_sheet_behavior = 2132082719;
 			
 			// aapt resource value: 2132082720
 			public static int character_counter_pattern = 2132082720;
+			
+			// aapt resource value: 0
+			public static int Hello = 0;
+			
+			// aapt resource value: 0
+			public static int Load_More = 0;
 			
 			// aapt resource value: 2132082718
 			public static int mr_button_content_description = 2132082718;

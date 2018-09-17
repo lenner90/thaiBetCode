@@ -60,7 +60,7 @@
                        Placeholder=""
                         />
             </StackLayout>
-            <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="40">
+            <StackLayout Grid.Row="3" Orientation="Horizontal" Spacing="40">
                 <Entry x:Name="txtNo3"
                         WidthRequest="50"
                        MaxLength="4"
@@ -97,26 +97,6 @@
                        WidthRequest="50"
                        MaxLength="4"
                        Text="{Binding Down4}"
-                       Placeholder=""
-                        />
-            </StackLayout>
-            <StackLayout Grid.Row="5" Orientation="Horizontal" Spacing="40">
-                <Entry x:Name="txtNo5"
-                        WidthRequest="50"
-                       MaxLength="4"
-                       Text="{Binding No5}"
-                       Placeholder=""
-                        />
-                <Entry x:Name="txtUp5"
-                       WidthRequest="50"
-                       MaxLength="4"
-                       Text="{Binding Up5}"
-                       Placeholder=""
-                        />
-                <Entry x:Name="txtDown5"
-                       WidthRequest="50"
-                       MaxLength="4"
-                       Text="{Binding Down5}"
                        Placeholder=""
                         />
             </StackLayout>

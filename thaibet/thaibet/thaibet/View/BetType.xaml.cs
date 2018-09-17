@@ -19,12 +19,12 @@ namespace thaibet.View
 
         public void OnClick2d(object o, EventArgs e)
         {
-            Navigation.PushAsync(new Bet2d());
+            Navigation.PushAsync(new Bet2d() { Title = "2D" });
         }
 
         public void OnClick3d(object o, EventArgs e)
         {
-            Navigation.PushAsync(new Bet3d());
+            Navigation.PushAsync(new Bet3d() { Title = "3D" });
         }
     }
 }

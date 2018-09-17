@@ -108,6 +108,13 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "thaibet.Android.dll" comes first in this list. */
 		"thaibet.Android.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
+		"Syncfusion.Core.XForms.dll",
+		"Syncfusion.DataSource.Portable.dll",
+		"Syncfusion.GridCommon.Portable.dll",
+		"Syncfusion.Licensing.dll",
+		"Syncfusion.SfListView.XForms.Android.dll",
+		"Syncfusion.SfListView.XForms.dll",
 		"thaibet.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

@@ -32,8 +32,8 @@ namespace thaibet.Login
         {
             //string id = Application.Current.Properties["id"].ToString();
 
-            string data = "userName=" + userNm.Text + "&pass=" + txtPass.Text;
-            string urlPath = "http://192.168.0.173/BETAPI/API/Values?";
+            string data = "?userName=" + userNm.Text + "&pass=" + txtPass.Text;
+            string urlPath = Application.Current.Properties["ApiUrl"].ToString() +"/LoginUser";
             var request = HttpWebRequest.Create(urlPath + data);
             request.ContentType = "application/json";
             //request.Method = "GET";
@@ -65,7 +65,7 @@ namespace thaibet.Login
                         {
                             Application.Current.Properties["userId"] = content.ToString();
                             Application.Current.Properties["userName"] = userNm.Text.Trim();
-                            Navigation.PushAsync(new BetType());
+                            Navigation.PushAsync(new action());
                         }
                     }
 

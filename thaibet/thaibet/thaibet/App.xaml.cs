@@ -17,10 +17,11 @@ namespace thaibet
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            // Handle when your app starts
+            Application.Current.Properties["ApiUrl"] = "http://192.168.0.173/BETAPI/BET";
+        }
 
-		protected override void OnSleep ()
+        protected override void OnSleep ()
 		{
 			// Handle when your app sleeps
 		}
