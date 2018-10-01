@@ -68,11 +68,12 @@ namespace thaibet.View
 
             var lstView = new ListView();
 
-            string[] arr4 = new string[4];
-            int i = 0;
+            string[] arr4 = new string[5];
+            int i = 1;
+            arr4[0] = "Number               " + "Up               " + "Down";
             foreach (var itm in betList)
             {
-                arr4[i] = itm.bet_number.ToString();
+                arr4[i] = itm.bet_number.ToString() + "                         " + itm.up + "                    " + itm.down;
                 i++;
             }
             lstView.ItemsSource = arr4;

@@ -23,81 +23,93 @@
             <StackLayout Grid.Row="1" Orientation="Horizontal" Spacing="40">
                 <Entry x:Name="txtNo1"
                         WidthRequest="50"
-                       MaxLength="4"
+                       MaxLength="3"
                        Text="{Binding No1}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
                 <Entry x:Name="txtUp1"
                        WidthRequest="50"
                        MaxLength="4"
                        Text="{Binding Up1}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
                 <Entry x:Name="txtDown1"
                        WidthRequest="50"
                        MaxLength="4"
                        Text="{Binding Down1}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
             </StackLayout>
             <StackLayout Grid.Row="2" Orientation="Horizontal" Spacing="40">
                 <Entry x:Name="txtNo2"
                         WidthRequest="50"
-                       MaxLength="4"
+                       MaxLength="3"
                        Text="{Binding No2}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
                 <Entry x:Name="txtUp2"
                        WidthRequest="50"
                        MaxLength="4"
                        Text="{Binding Up2}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
                 <Entry x:Name="txtDown2"
                        WidthRequest="50"
                        MaxLength="4"
                        Text="{Binding Down2}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
             </StackLayout>
             <StackLayout Grid.Row="3" Orientation="Horizontal" Spacing="40">
                 <Entry x:Name="txtNo3"
                         WidthRequest="50"
-                       MaxLength="4"
+                       MaxLength="3"
                        Text="{Binding No3}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
                 <Entry x:Name="txtUp3"
                        WidthRequest="50"
                        MaxLength="4"
                        Text="{Binding Up3}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
                 <Entry x:Name="txtDown3"
                        WidthRequest="50"
                        MaxLength="4"
                        Text="{Binding Down3}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
             </StackLayout>
             <StackLayout Grid.Row="4" Orientation="Horizontal" Spacing="40">
                 <Entry x:Name="txtNo4"
                         WidthRequest="50"
-                       MaxLength="4"
+                       MaxLength="3"
                        Text="{Binding No4}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
                 <Entry x:Name="txtUp4"
                        WidthRequest="50"
                        MaxLength="4"
                        Text="{Binding Up4}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
                 <Entry x:Name="txtDown4"
                        WidthRequest="50"
                        MaxLength="4"
                        Text="{Binding Down4}"
                        Placeholder=""
+                       TextChanged="OnTextChange"
                         />
             </StackLayout>
             <Button Grid.Row="6" Text="Submit" Clicked="OnClicked" />

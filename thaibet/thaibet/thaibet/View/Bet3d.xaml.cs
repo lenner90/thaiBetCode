@@ -16,9 +16,35 @@ namespace thaibet.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Bet3d : ContentPage
 	{
+        string betLimit = string.Empty;
 		public Bet3d ()
 		{
-			InitializeComponent ();
+
+            string data = "?code=bet_limit";
+            string urlPath = Application.Current.Properties["ApiUrl"].ToString() + "/GetSetting";
+            var request = HttpWebRequest.Create(urlPath + data);
+            request.ContentType = "application/json";
+            request.Method = "GET";
+            request.ContentLength = 0;
+            using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
+            {
+                if (response.StatusCode != HttpStatusCode.OK)
+                    Console.Out.WriteLine("Error fetching data. Server returned status code: {0}", response.StatusCode);
+                using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+                {
+                    var content = reader.ReadToEnd();
+                    if (string.IsNullOrWhiteSpace(content))
+                    {
+                        Console.Out.WriteLine("Response contained empty body...");
+                    }
+                    else
+                    {
+                        betLimit = content.ToString().Replace("\"", "");               
+                    }
+                }
+            }
+
+            InitializeComponent ();
             #region
             //var layout = new StackLayout();
             //layout.Spacing = 5;
@@ -90,6 +116,11 @@ namespace thaibet.View
 
         async void OnClicked(object o, EventArgs e)
         {
+            if (!validCheck())
+            {
+               await Application.Current.MainPage.DisplayAlert("Alert", "Bet Limit Must Not Exceed " + betLimit, "OK");
+                return;
+            }
             string batchId = string.Empty;
             string urlPath = Application.Current.Properties["ApiUrl"].ToString() + "/GetUid";
             var request = HttpWebRequest.Create(urlPath);
@@ -199,6 +230,43 @@ namespace thaibet.View
                 await Application.Current.MainPage.DisplayAlert("Alert", "Your have been Submit Successful", "OK");
                 Application.Current.Properties["currBetList"] = batchId;
                 Navigation.PushAsync(new receipt() { Title = "List" });
+            }
+        }
+
+        public bool validCheck()
+        {
+            bool isvalid = true;
+
+            if (!string.IsNullOrEmpty(txtNo1.Text))
+            {
+                if (int.Parse(txtUp1.Text) > int.Parse(betLimit) || int.Parse(txtDown1.Text) > int.Parse(betLimit))
+                    isvalid = false;
+            }
+            if (!string.IsNullOrEmpty(txtNo2.Text))
+            {
+                if (int.Parse(txtUp1.Text) > int.Parse(betLimit) || int.Parse(txtDown2.Text) > int.Parse(betLimit))
+                    isvalid = false;
+            }
+            if (!string.IsNullOrEmpty(txtNo3.Text))
+            {
+                if (int.Parse(txtUp3.Text) > int.Parse(betLimit) || int.Parse(txtDown3.Text) > int.Parse(betLimit))
+                    isvalid = false;
+            }
+            if (!string.IsNullOrEmpty(txtNo4.Text))
+            {
+                if (int.Parse(txtUp4.Text) > int.Parse(betLimit) || int.Parse(txtDown4.Text) > int.Parse(betLimit))
+                    isvalid = false;
+            }
+            return isvalid;
+        }
+
+        public void OnTextChange(object sender, TextChangedEventArgs args)
+        {
+            if (!string.IsNullOrWhiteSpace(args.NewTextValue))
+            {
+                bool isValid = args.NewTextValue.ToCharArray().All(x => char.IsDigit(x)); //Make sure all characters are numbers
+
+                ((Entry)sender).Text = isValid ? args.NewTextValue : args.NewTextValue.Remove(args.NewTextValue.Length - 1);
             }
         }
     }

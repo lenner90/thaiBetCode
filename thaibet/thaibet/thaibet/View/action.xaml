@@ -6,6 +6,7 @@
         <StackLayout>
             <Button Text="New" Clicked="OnClickNew" />
             <Button Text="History" Clicked="OnClickHistory" />
+            <Button Text="Bet Limit" Clicked="OnClickBetLimit" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -26,5 +26,11 @@ namespace thaibet.View
         {
             Navigation.PushAsync(new History() { Title = "History" });
         }
+
+        //OnClickBetLimit
+        public void OnClickBetLimit(object o, EventArgs e)
+        {
+            Navigation.PushAsync(new BetLimit() { Title = "Bet Limit" });
+        }
     }
 }
